@@ -1,6 +1,4 @@
 import React from "react";
-import {TheHeader} from "@/components/TheHeader";
-import {TheFooter} from "@/components/TheFooter";
 import {Metadata} from "next";
 import Link from "next/link";
 
@@ -9,7 +7,7 @@ export const metadata : Metadata = {
     description : "About page"
 }
 
-export default function ({children,} : { children: React.ReactNode }){
+export default function Team({children,} : { children: React.ReactNode }){
     return (
        <div>
            <h1>About us</h1>

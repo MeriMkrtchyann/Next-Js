@@ -21,8 +21,9 @@ export default async function Blog(){
         <>
             <h1> Blog page</h1>
             <ul>
+                 {/*eslint-disable-next-line @typescript-eslint/no-explicit-any*/}
                 {posts.map((post : any) => (
-                        <li>
+                        <li key={post.id}>
                             <Link href={`/blog/${post.id}`}>{post.title}</Link>
                         </li>
                 ))}

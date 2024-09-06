@@ -25,6 +25,7 @@ export async  function generateMetadata ({params : {id}}: Props) {
 }
 
 export default async  function Post({params : {id}}: Props){
+    {/*eslint-disable-next-line @typescript-eslint/no-explicit-any*/}
     const post: any = await getData(id)
 
     return(
